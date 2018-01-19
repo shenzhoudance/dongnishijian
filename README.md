@@ -1,24 +1,9 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# 2018年1月19日
+**肖威工作总结**
+- 懂你时间
+- dongnishijian.com
+懂你时间网页端+微信端+移动端开发；
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+做一个刚需市场的产品非常重要，前提是具备了技术实力作为基础，不然难以完成想法到产品的打造；
