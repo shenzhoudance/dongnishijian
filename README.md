@@ -30,3 +30,4 @@
 rails g controller welcome
 touch app/views/welcome/index.html.erb
 ```
+- 修改根目录 `root 'welcome#index'`
