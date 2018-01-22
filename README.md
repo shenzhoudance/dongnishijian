@@ -22,3 +22,11 @@
 **（5）价值论：针对于后来人有哪些建议；**
 
 这才是真实有价值的结果的经验，哪些没有经过人生实践的知识，有时候没有任何的价值，仅仅是消磨我们的时间；
+
+# 2018年1月22日
+**张家琛工作内容**
+- 生成welcome页面  
+```
+rails g controller welcome
+touch app/views/welcome/index.html.erb
+```
