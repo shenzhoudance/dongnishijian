@@ -2,6 +2,14 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.background {
+    background-size: cover;
+    //这段代码主要实现了图片不会被拉伸变现的效果
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    font-family: 'Open Sans', sans-serif;
+}
+
 .push-box {
   /* 区块 */
   text-align: center;
