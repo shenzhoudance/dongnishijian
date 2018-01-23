@@ -38,7 +38,7 @@ touch app/views/welcome/index.html.erb
 - 实作product mvc crud
 - 了解支付逻辑
 
-> - 将环境设置成开发环境`bin/rails db:environment:set RAILS_ENV=development`
+> - 将rails数据库环境设置成开发环境`bin/rails db:environment:set RAILS_ENV=development`
 > - 创建移植 只能用`rails g migration *****`然后`rake db:migrate`
 ```
 migration的格式为
@@ -46,4 +46,54 @@ def change
   add_colloum :users, :is_vip, :boolean, default: false
               (表)    (表的字段)(字段的数据类型)(数据类型的默认值)
 end
+```
+```
+new页面
+<div class="col-md-4 col-md-offset-4">
+    <h2>新增</h2>
+    <hr>
+    <%= form_for @product do |f| %>
+    标题
+    <%= f.text_field :title %>
+    <br>
+    叙述
+    <br>
+    <%= f.text_area :description %>
+    <br>
+    <%= f.submit "Submit", :disable_with => 'Submitting...' %>
+    <% end %>
+</div>
+```
+```
+index页面
+<%= link_to("New product", new_product_path) %>
+<table class="table table-hover">
+<thead>
+  <tr>
+    <td>#</td>
+    <td>Title</td>
+    <td>Description</td>
+  </tr>
+</thead>
+<tbody>
+  <% @products.each do |product| %>
+    <tr>
+      <td>#</td>
+      <td><%= link_to(product.title, product_path(product)) %></td>
+      <td><%= product.description %></td>
+      <td>
+          <%= link_to("Edit", edit_product_path(product))%>
+          <%= link_to("Delete", product_path(product), method: :delete )%>
+      </td>
+    </tr>
+  <% end %>
+</tbody>
+</table>
+```
+```
+show页面
+<%= link_to("编辑", edit_product_path(@product)) %>
+<%= link_to("删除", product_path(@product), method: :delete) %>
+<h2><%= @product.title %></h2>
+<p><%= @product.description %></p>
 ```
