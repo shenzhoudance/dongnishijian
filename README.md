@@ -38,7 +38,7 @@ touch app/views/welcome/index.html.erb
 - 实作product mvc crud
 - 了解支付逻辑
 
-> - 将环境设置成开发环境`bin/rails db:environment:set RAILS_ENV=development`
+> - 将rails数据库环境设置成开发环境`bin/rails db:environment:set RAILS_ENV=development`
 > - 创建移植 只能用`rails g migration *****`然后`rake db:migrate`
 ```
 migration的格式为
