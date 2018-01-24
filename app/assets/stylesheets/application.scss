@@ -16,9 +16,39 @@
  @import "bootstrap-sprockets";
  @import "bootstrap";
 
- .navbar {
-   position: relative;
-   min-height: 50px;
-   margin-bottom: 20px;
-   border: 1px solid transparent;
+ // .navbar {
+ //   position: relative;
+ //   min-height: 50px;
+ //   margin-bottom: 20px;
+ //   border: 1px solid transparent;
+ // }
+
+
+ .jumbotron {
+   background-image:url('https://ws4.sinaimg.cn/large/006tNc79ly1fnqw49z485j30sg0g0tbn.jpg');
+   background-repeat: no-repeat;
+   background-size: cover;
+   padding-bottom: 110px;
+   margin-top: 0px;
+
+ }
+ .slogan1{
+   margin-top: 200px;
+   margin-bottom: 80px;
+   text-align: center;
+   color: white;
+ }
+
+ .slogan2 {
+   margin-top: 10px;
+   margin-bottom: 50px;
+   text-align: center;
+   color: white;
+   top: 12px;
+ }
+
+ .lead {
+   margin-bottom: 60px;
+   text-align: center;
+   color: white;
  }
