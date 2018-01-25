@@ -37,7 +37,7 @@ touch app/views/welcome/index.html.erb
 - 生成product(产品),product_list(产品列表),product_list_content(产品列表的列表内容)
 - 实作product mvc crud
 - 了解支付逻辑
-
+<!--
 > - 将rails数据库环境设置成开发环境`bin/rails db:environment:set RAILS_ENV=development`
 > - 创建移植 只能用`rails g migration *****`然后`rake db:migrate`
 ```
@@ -97,3 +97,8 @@ show页面
 <h2><%= @product.title %></h2>
 <p><%= @product.description %></p>
 ```
+!-->
+
+# 2018年1月25日
+**肖威工作总结**
+上午：修改welcome的展示界面，需要实现更美观的效果，导航栏 welcome 和 内容页面 分开呈现；
