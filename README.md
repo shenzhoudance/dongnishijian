@@ -97,3 +97,8 @@ show页面
 <h2><%= @product.title %></h2>
 <p><%= @product.description %></p>
 ```
+
+
+**杨吉堂工作总结**
+- 优化welcome页面
+- 增加登陆功能
