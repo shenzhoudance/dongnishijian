@@ -1,0 +1,4 @@
+<%= link_to("编辑", edit_admin_product_list_path(@product_list)) %>
+<%= link_to("删除", admin_product_list_path(@product_list), method: :delete) %>
+<h2><%= @product_list.title %></h2>
+<p><%= @product_list.description %></p>
