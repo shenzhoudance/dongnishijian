@@ -108,4 +108,4 @@ show页面
 **杨吉堂工作总结**
 - 增加bootstrap flash 功能、安装simpleform with bootstrap、font-awesome-rails
 - 实作后台CRUD
--
+- 建立管理后台
