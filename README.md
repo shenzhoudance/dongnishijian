@@ -106,6 +106,6 @@ show页面
 
 # 2018年1月26日
 **杨吉堂工作总结**
-- 增加bootstrap flash 功能
-- 安装simpleform with bootstrap
-- 安装font-awesome-rails
+- 增加bootstrap flash 功能、安装simpleform with bootstrap、font-awesome-rails
+- 实作后台CRUD
+-
