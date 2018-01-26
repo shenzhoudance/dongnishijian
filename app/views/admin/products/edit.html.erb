@@ -1,15 +1,35 @@
-<h2>编辑</h2>
 
-<hr>
-<%= form_for [:admin, @product] do |f| %>
+<h2> Edit Product </h2>
 
-标题
-<%= f.text_field :title %>
-<br>
-叙述
-<br>
-<%= f.text_area :description %>
-<br>
+<%= simple_form_for [:admin, @product] do |f| %>
 
-<%= f.submit "Submit", :disable_with => 'Submitting...' %>
+  <div class="group">
+    <%= f.input :title %>
+  </div>
+
+  <div class="group">
+    <%= f.input :description %>
+  </div>
+
+  <div class="group">
+    <%= f.input :price %>
+  </div>
+
+   <% if @product.image.present? %>
+   <span>目前商品图</span>
+
+   <%= image_tag(@product.image.thumb.url) %>
+   <% end %>
+
+  <div class="group">
+   <%= f.input :image, as: :file %>
+   </div>
+
+   <div class="group">
+  <%= f.input :detail, as: :wysihtml5, :label => "商品详情" %>
+ </div>
+
+  <%= f.submit "Submit", data: { disable_with: "Submitting..." } %>
+
+
 <% end %>

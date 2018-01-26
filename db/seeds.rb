@@ -4,11 +4,16 @@
 # Examples:
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first
 
-u = User.new(email: "admin@test.com", password: "123456", password_confirmation: "123456")
-u.save
-#保存model到数据库
+#   Character.create(name: 'Luke', movie: movies.first)
+
+
+u = User.new
+u.email = "admin@test.com"
+
+u.password = "123456"
+
+u.password_confirmation = "123456"
+
 u.is_admin = true
 u.save
-#更新数据库

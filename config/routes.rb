@@ -9,4 +9,8 @@ Rails.application.routes.draw do
   end
   resources :product_lists
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+
+   namespace :admin do
+   resources :products
+   end
 end

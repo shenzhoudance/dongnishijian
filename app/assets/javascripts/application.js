@@ -15,3 +15,6 @@
 //= require turbolinks
 //= require bootstrap
 //= require_tree .
+//= require bootstrap/collapse
+//= require bootstrap-wysihtml5
+//= require bootstrap-wysihtml5/locales/zh-CN
