@@ -18,10 +18,12 @@ class Admin::ProductsController < ApplicationController
 
     if @product.save
       redirect_to admin_products_path
+
     else
       render :new
     end
   end
+
 
    def edit
    @product = Product.find(params[:id])

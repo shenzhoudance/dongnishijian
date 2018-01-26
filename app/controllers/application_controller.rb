@@ -6,4 +6,5 @@ class ApplicationController < ActionController::Base
       redirect_to  "/", alert: "Your are not admin."
     end
   end
+
 end

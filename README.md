@@ -104,9 +104,18 @@ show页面
 - 增加登陆功能
 
 
+
+
+
 # 2018年1月26日
 **杨吉堂工作总结**
 - 增加bootstrap flash 功能、安装simpleform with bootstrap、font-awesome-rails
 - 实作后台CRUD
 - 建立管理后台
 - 增加商品详情栏位
+
+**张家琛工作总结**
+  - 上午：支付逻辑梳理 上午精力充沛，时间拿来攻坚克难最合适
+
+  - 下午：1.product_list new,show,edit的html页面；ProductList不能新建一笔资料
+
