@@ -19,3 +19,32 @@
     </div>
   </div>
 </div>
+
+
+<!-- 商品详情区域>
+<div class="container">
+<!- 商品详情区域-->
+<div class="col-md-12 product-detail">
+
+    <!-- 导航栏 -->
+    <div class="row">
+      <ul class="nav nav-tabs nav-justified">
+        <li class="active">
+          <a href="#tab_default_1" data-toggle="tab">商品详情</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="tab-content">
+
+      <!-- 商品详情区域 -->
+      <div class="product-detail-box row tab-pane active" id="tab_default_1">
+        <%= simple_format(@product.detail) %>
+      </div>
+
+      <!-- 商品评论区域 尚未添加-->
+
+    </div>
+
+  </div>
+</div>
