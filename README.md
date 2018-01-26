@@ -98,7 +98,15 @@ show页面
 <p><%= @product.description %></p>
 ```
 
-
+# 2018年1月25日
 **杨吉堂工作总结**
 - 优化welcome页面
 - 增加登陆功能
+
+
+# 2018年1月26日
+**杨吉堂工作总结**
+- 增加bootstrap flash 功能、安装simpleform with bootstrap、font-awesome-rails
+- 实作后台CRUD
+- 建立管理后台
+- 增加商品详情栏位
