@@ -108,3 +108,4 @@ show页面
 **杨吉堂工作总结**
 - 增加bootstrap flash 功能
 - 安装simpleform with bootstrap
+- 安装font-awesome-rails
