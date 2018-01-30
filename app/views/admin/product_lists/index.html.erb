@@ -1,5 +1,5 @@
 <h2>管理员页面</h2>
-    <%= link_to("New product_list", new_admin_product_product_list_path) %>
+    <%= link_to("New product_list", new_admin_product_list_path) %>
   <table class="table table-hover">
     <thead>
       <tr>
@@ -12,11 +12,11 @@
       <% @product_lists.each do |product_list| %>
         <tr>
           <td>#</td>
-          <td><%= link_to(product_list.title, admin_product_product_list_path(product_list)) %></td>
+          <td><%= link_to(product_list.title, admin_product_list_path(product_list)) %></td>
           <td><%= product_list.description %></td>
           <td>
-              <%= link_to("Edit", edit_admin_product_product_list_path(product_list))%>
-              <%= link_to("Delete", admin_product_product_list_path(product_list), method: :delete )%>
+              <%= link_to("Edit", edit_admin_product_list_path(product_list))%>
+              <%= link_to("Delete", admin_product_list_path(product_list), method: :delete )%>
           </td>
         </tr>
       <% end %>
