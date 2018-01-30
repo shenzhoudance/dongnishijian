@@ -119,3 +119,7 @@ show页面
 
   - 下午：1.product_list new,show,edit的html页面；ProductList不能新建一笔资料
 
+
+  # 2018年1月29日
+  **杨吉堂工作总结**
+  - 增加产品的用户的评论功能

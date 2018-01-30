@@ -1,7 +1,11 @@
 Rails.application.routes.draw do
   devise_for :users
   root "welcome#index"
-  resources :products
+  resources :products do
+    resources :reviews
+  end
+
+
   namespace :admin do
     resources :products do
       resources :product_lists
@@ -10,7 +14,4 @@ Rails.application.routes.draw do
   resources :product_lists
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
-   namespace :admin do
-   resources :products
-   end
 end
