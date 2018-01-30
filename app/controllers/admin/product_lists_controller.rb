@@ -10,7 +10,7 @@ class Admin::ProductListsController < ApplicationController
   def create
     @product_list = ProductList.new(product_list_params)
     if @product_list.save
-      redirect_to admin_product_product_list_path(@product_list)
+      redirect_to admin_product_list_path(@product_list)
     else
       render :new
     end
