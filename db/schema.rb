@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180129061345) do
+ActiveRecord::Schema.define(version: 20180130085305) do
 
   create_table "product_list_contents", force: :cascade do |t|
     t.string "title"
@@ -35,6 +35,7 @@ ActiveRecord::Schema.define(version: 20180129061345) do
     t.string "image"
     t.text "detail"
     t.string "teacher"
+    t.boolean "is_paid", default: false
   end
 
   create_table "reviews", force: :cascade do |t|

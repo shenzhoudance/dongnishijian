@@ -120,11 +120,15 @@ show页面
   - 下午：1.product_list new,show,edit的html页面；ProductList不能新建一笔资料
 
 
-  # 2018年1月29日
   **杨吉堂工作总结**
   - 增加产品的用户的评论功能
+
 
   # 2018年1月30日
   **张家琛工作总结**
   - 解决bug product_list路径问题
   - 完成product_list细节
+
+  **杨吉堂工作总结**
+  - 增加认证用户才能评论、评论不得为空验证
+  - 增加is_paid栏位

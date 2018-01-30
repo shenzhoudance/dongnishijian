@@ -1,5 +1,6 @@
 class ReviewsController < ApplicationController
 before_action :self_product
+before_action :authenticate_user!, :only => [:new, :create]
 
   def new
       @review = Review.new
@@ -13,7 +14,7 @@ before_action :self_product
         redirect_to   product_path(@product)
       else
         flash[:warning] = "你没有填写评论内容！"
-        redirect_to   product_path(@product)
+          redirect_to   product_path(@product)
       end
   end
 
@@ -26,6 +27,7 @@ before_action :self_product
   end
 
   def review_params
-    params.require(:review).permit(:content,:user_id,:product_id)
+    params.require(:review).permit(:content)
   end
+  
 end
