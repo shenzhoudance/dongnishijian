@@ -9,6 +9,8 @@
       <th>#</th>
       <th width="220">Product Pic</th>
       <th>Name</th>
+      <th>Description</th>
+      <th>Teacher</th>
       <th>Price</th>
       <th width="100"> Options</th>
     </tr>
@@ -20,7 +22,7 @@
           <%= product.id %>
         </td>
         <td>
-          <%= link_to admin_product_path(product) do %>
+          <%= link_to product_path(product) do %>
             <% if product.image.present? %>
               <%= image_tag(product.image.thumb.url, class: "thumbnail") %>
             <% else %>
@@ -32,6 +34,13 @@
           <%= product.title %>
         </td>
         <td>
+          <%= product.description %>
+        </td>
+        <td>
+          <%= product.teacher %>
+        </td>
+
+        <td>
           <%= product.price %>
         </td>
         <td>
@@ -41,4 +50,3 @@
     <% end %>
   </tbody>
 </table>
-
