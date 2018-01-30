@@ -10,7 +10,6 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-
 ActiveRecord::Schema.define(version: 20180129061345) do
 
   create_table "product_list_contents", force: :cascade do |t|
